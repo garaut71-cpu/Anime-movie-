@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieBox</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #0b0b0f;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 20px;
+      background: #111116;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #e50914;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 330px;
+      padding: 70px 25px;
+      background: linear-gradient(90deg, #111 20%, transparent);
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #bbb;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #e50914;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 25px 20px;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+    }
+
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background: #15151c;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .poster {
+      height: 230px;
+      background: linear-gradient(135deg, #333, #111);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .info {
+      padding: 12px;
+    }
+
+    .info h3 {
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .info p {
+      color: #999;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      background: #111116;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 700px) {
+      .movies {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MovieBox</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Anime</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to MovieBox</h1>
+    <p>
+      Discover movies, anime, dramas and entertainment
+      in one simple place.
+    </p>
+
+    <a href="#movies" class="btn">Explore Now</a>
+  </div>
+
+  <section id="movies">
+    <h2>Popular Movies</h2>
+
+    <div class="movies">
+
+      <div class="card">
+        <div class="poster">Movie Poster</div>
+        <div class="info">
+          <h3>Movie One</h3>
+          <p>Action • 2026</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="poster">Movie Poster</div>
+        <div class="info">
+          <h3>Movie Two</h3>
+          <p>Drama • 2026</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="poster">Anime Poster</div>
+        <div class="info">
+          <h3>Anime One</h3>
+          <p>Anime • 2026</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="poster">Drama Poster</div>
+        <div class="info">
+          <h3>Drama One</h3>
+          <p>Drama • 2026</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 MovieBox
+  </footer>
+
+</body>
+</html>
